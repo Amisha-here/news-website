@@ -1,12 +1,12 @@
 import React from 'react';
-import { HashRouter, Route, Switch, Redirect } from 'react-router-dom';
+import { BrowseRouter, Route, Switch, Redirect } from 'react-router-dom';
 import Header from '../components/Header';
 import PageNotFound from '../components/PageNotFound';
 import ShowStories from '../components/ShowStories';
 
 const AppRouter = () => {
   return (
-    <HashRouter>
+    <BrowseRouter>
       <div className="container">
         <Header />
         <Switch>
@@ -24,7 +24,7 @@ const AppRouter = () => {
           <Route component={PageNotFound} />
         </Switch>
       </div>
-    </HashRouterr>
+    </BrowseRouter>
   );
 };
 
